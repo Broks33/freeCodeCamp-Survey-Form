@@ -1,0 +1,145 @@
+$font-family: 'Inter', sans-serif;
+
+body{
+    margin: 0;
+}
+
+.bg{
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+.main{
+    width: 720px;
+    margin: 0 auto;
+    padding: 100px;
+    height: 100%;
+}
+
+.header{
+    font-family: $font-family;
+    text-align: center;
+}
+
+.title{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.title-text{
+    color: rgb(190, 190, 190);
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.container{
+    background-color: #272746;
+    border-radius: 0.25rem;
+}
+
+.container-wrapp{
+    padding: 35px;
+    margin: 0 auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+
+    label{
+        margin-bottom: 8px;
+        color: white;
+        font-size: 14px;
+        font-family: $font-family;
+    }
+
+    input{
+        padding-left: 10px;
+        border-radius: 0.25rem;
+        height: 23px;
+    }
+
+    select{
+        padding-left: 10px;
+        border-radius: 0.25rem;
+        height: 30px;
+        color: #898c90;
+    }
+
+    p{
+        margin-bottom: 8px;
+        color: white;
+        font-size: 14px;
+        font-family: $font-family;
+    }
+
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+        transition: all 0.2s;
+    }
+
+    textarea{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 120px;
+    }
+}
+
+.radio{
+    display: flex;
+    
+}
+
+.radio{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+
+    label{
+        color: white;
+        font-size: 14px;
+        font-family: $font-family;
+        display: flex;
+        align-items: center;
+    }
+
+    input{
+        margin: 0 10px 7px 0;
+        transform: scale(1.2);
+        display: flex;
+        align-items: center;
+    }
+
+    input:first-child{
+        margin-top: 6px;
+    }
+
+    p{
+        margin-bottom: 8px;
+        color: white;
+        font-size: 14px;
+        font-family: $font-family;
+    }
+}
+
+.input-textarea{
+    min-height: 120px;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+.submit-button{
+    display: block;
+    padding: 0.75rem;
+    background-color: #37af65;
+    color: white;
+    border: 2px solid #37af65;
+    border-radius: 2px;
+    cursor: pointer;
+}
